@@ -28,7 +28,7 @@ async def add_book(book: Book):
    return data
 
 @app.put("/book/{id}")
-async def add_book(id: int, book: Book):
+async def update_book(id: int, book: Book):
    data[id-1] = book
    return data
 
